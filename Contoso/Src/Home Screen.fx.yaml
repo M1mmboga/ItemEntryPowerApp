@@ -15,9 +15,11 @@
 
         Icon5 As icon.ChevronLeft:
             Color: =RGBA(0, 0, 0, 1)
+            Height: =50
             Icon: =Icon.Hamburger
             OnSelect: =Back()
             PaddingLeft: =10
+            Width: =50
             ZIndex: =1
 
         Image5 As image:
