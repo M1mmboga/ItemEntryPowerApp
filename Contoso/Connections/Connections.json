@@ -1,0 +1,35 @@
+{
+  "dd1e50bc-ad9f-42f5-a8e7-08b9e2e8fb9b": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/henryorsborn/partial-builds/asev3migrations-with-resourceTemplate/1.0.1653.3403/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://moderncsa.sharepoint.com/sites/ITSupport_otg_GoalsDataExcel": {
+        "datasetOverride": {
+          "environmentVariableName": "otg_GoalsDataExcel",
+          "name": "https://moderncsa.sharepoint.com/sites/ITSupport"
+        },
+        "dataSources": {
+          "Tracker": {
+            "tableName": "1bf807b0-b470-443c-a6d4-d5c84d1ce57a",
+            "tableNameOverride": {
+              "environmentVariableName": "otg_shared_sharepointonline_5c7a6d3d3d83483aafc02219092cbd41",
+              "name": "1bf807b0-b470-443c-a6d4-d5c84d1ce57a"
+            }
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Tracker"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "dd1e50bc-ad9f-42f5-a8e7-08b9e2e8fb9b"
+  }
+}
