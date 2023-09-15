@@ -7,7 +7,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromScratch",
-    "AppDescription": "Power app with item entry and edit.",
+    "AppDescription": "Re-ordered the screen.",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
@@ -130,6 +130,7 @@
   "ScreenOrder": [
     "Home Screen",
     "New Entry Screen",
-    "Edit Entry Screen"
+    "Edit Entry Screen",
+    "Home Screen_1"
   ]
 }
