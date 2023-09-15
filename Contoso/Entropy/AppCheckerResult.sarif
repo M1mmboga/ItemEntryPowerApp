@@ -1858,66 +1858,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Close Add Form Icon_1'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Close Add Form Icon_1'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "New Entry Screen",
-                "type": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Close Add Form Icon_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Close Add Form Icon_1'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Close Add Form Icon_1'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "New Entry Screen",
-                "type": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Close Add Form Icon_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Edit Goal Icon_1'.AccessibleLabel"
                 }
               ],
@@ -1961,6 +1901,66 @@
                 "member": "TabIndex",
                 "module": "New Entry Screen",
                 "type": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Edit Goal Icon_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Close Add Form Icon_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Close Add Form Icon_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "New Entry Screen",
+                "type": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Close Add Form Icon_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Close Add Form Icon_1'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Close Add Form Icon_1'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "New Entry Screen",
+                "type": "'New Entry Screen'.Container1_1.Container3_1.Container5_1.'Close Add Form Icon_1'"
               }
             }
           ],
