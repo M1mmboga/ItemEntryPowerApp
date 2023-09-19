@@ -1,0 +1,51 @@
+{
+  "2d6f1e3a-dca0-4f92-b7e7-eaee27650f1a": {
+    "appActions": [
+      "UserProfile"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/henryorsborn/partial-builds/asev3migrations-with-resourceTemplate/1.0.1653.3403/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2d6f1e3a-dca0-4f92-b7e7-eaee27650f1a"
+  },
+  "bcea9274-74c5-41b0-8e0a-5ee3e3243a68": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/henryorsborn/partial-builds/asev3migrations-with-resourceTemplate/1.0.1653.3403/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://moderncsa.sharepoint.com/sites/ITSupport": {
+        "dataSources": {
+          "MealsTracker": {
+            "tableName": "9f43ebf4-f1ff-483b-8c2e-317559edc164"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "MealsTracker"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "bcea9274-74c5-41b0-8e0a-5ee3e3243a68"
+  }
+}

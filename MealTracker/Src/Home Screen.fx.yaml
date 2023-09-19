@@ -1,0 +1,160 @@
+"'Home Screen' As screen":
+    Fill: =RGBA(0, 0, 0, 1)
+
+    Container1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =120
+        LayoutJustifyContent: =LayoutJustifyContent.End
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =12
+        PaddingRight: =12
+        PaddingTop: =12
+        Width: =640
+        ZIndex: =1
+
+        Image1 As image:
+            AlignInContainer: =AlignInContainer.Start
+            Height: =64
+            Image: =User().Image
+            LayoutMinHeight: =320
+            LayoutMinWidth: =320
+            RadiusBottomLeft: =32
+            RadiusBottomRight: =32
+            RadiusTopLeft: =32
+            RadiusTopRight: =32
+            Width: =64
+            ZIndex: =2
+
+    Container2 As groupContainer.verticalAutoLayoutContainer:
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =944
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =640
+        Y: =120
+        ZIndex: =2
+
+        Label2 As label:
+            AlignInContainer: =AlignInContainer.Stretch
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Lato Black'
+            FontWeight: =FontWeight.Bold
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            PaddingLeft: =12
+            Size: =21
+            Text: ="Explore Meals"
+            Width: =560
+            ZIndex: =1
+
+        "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+            BorderStyle: =BorderStyle.None
+            DelayItemLoading: =true
+            Fill: =RGBA(255, 255, 255, 1)
+            Items: =MealsTracker
+            Layout: =Layout.Vertical
+            LayoutMinHeight: =100
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =116
+            ZIndex: =1
+
+            Title1 As label:
+                Color: =RGBA(102, 102, 102, 1)
+                Font: =Font.Lato
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Day
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Parent.TemplateWidth - 86
+                X: =16
+                Y: =(Parent.TemplateHeight - (Self.Size*1.8 + Subtitle1.Size*1.8 + 2 + Body1.Size*1.8)) / 2
+                ZIndex: =1
+
+            Subtitle1 As label:
+                Color: =RGBA(102, 102, 102, 1)
+                Font: =Font.Lato
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Title
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Title1.Width
+                X: =Title1.X
+                Y: =Title1.Y + Title1.Height
+                ZIndex: =2
+
+            Body1 As label:
+                Color: =RGBA(102, 102, 102, 1)
+                Font: =Font.Lato
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Breakfast
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Title1.Width
+                X: =Title1.X
+                Y: =Subtitle1.Y + Subtitle1.Height
+                ZIndex: =3
+
+            NextArrow1 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Color: =RGBA(166, 166, 166, 1)
+                Height: =50
+                Icon: =Icon.ChevronRight
+                OnSelect: |-
+                    =Set(selectedmeal, ThisItem);
+                    Navigate('Edit Meals Screen', ScreenTransition.Fade);
+                PaddingBottom: =16
+                PaddingLeft: =16
+                PaddingRight: =16
+                PaddingTop: =16
+                Tooltip: ="View item details"
+                Width: =50
+                X: =Parent.TemplateWidth - Self.Width - 12
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =4
+
+            Separator1 As rectangle:
+                Height: =8
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =5
+
+            Rectangle1 As rectangle:
+                Height: =Parent.TemplateHeight - Separator1.Height
+                OnSelect: =Select(Parent)
+                Visible: =ThisItem.IsSelected
+                Width: =4
+                ZIndex: =6
+
+    Container3 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =71
+        LayoutMode: =LayoutMode.Auto
+        Width: =640
+        Y: =1064
+        ZIndex: =3
+
+        Icon1 As icon.Add:
+            Color: =RGBA(77, 77, 77, 1)
+            Icon: =Icon.Add
+            OnSelect: |-
+                =NewForm(saveMealsForm);
+                Navigate('Add Meals Screen', ScreenTransition.Fade);
+            ZIndex: =1
+
