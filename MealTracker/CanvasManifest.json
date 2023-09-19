@@ -11,7 +11,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromScratch",
-    "AppDescription": "This app tracks my meals as I progress in the gym.",
+    "AppDescription": "This app tracks my meals as I progress in the gym. Connected to github",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
