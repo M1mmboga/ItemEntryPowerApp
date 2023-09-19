@@ -1,2 +1,2 @@
-# ItemEntryPowerApp
-This is a 3 screen power app to enter data items. It has a home screen, new entry screen and edit screen.
+# GymMeals Tracker App
+This app will be customized to track meals.
