@@ -482,3 +482,11 @@
             Y: =1014
             ZIndex: =1
 
+    Icon4 As icon.ArrowLeft:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Back()
+        X: =18
+        Y: =14
+        ZIndex: =5
+

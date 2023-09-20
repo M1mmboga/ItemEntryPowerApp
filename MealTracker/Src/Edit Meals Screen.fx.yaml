@@ -485,5 +485,13 @@
             Width: =64
             X: =210
             Y: =1014
-            ZIndex: =1
+            ZIndex: =2
+
+    Icon3 As icon.ArrowLeft:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Back()
+        X: =18
+        Y: =16
+        ZIndex: =5
 
