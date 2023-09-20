@@ -1,8 +1,8 @@
 "'Home Screen' As screen":
-    Fill: =RGBA(0, 0, 0, 1)
+    Fill: =RGBA(255, 255, 255, 1)
 
     Container1 As groupContainer.verticalAutoLayoutContainer:
-        Height: =120
+        Height: =81
         LayoutJustifyContent: =LayoutJustifyContent.End
         LayoutMode: =LayoutMode.Auto
         PaddingLeft: =12
@@ -26,11 +26,11 @@
 
     Container2 As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(0, 0, 0, 1)
-        Height: =944
+        Height: =983
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =640
-        Y: =120
+        Y: =81
         ZIndex: =2
 
         Label2 As label:
