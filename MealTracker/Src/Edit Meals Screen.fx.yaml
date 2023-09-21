@@ -65,7 +65,6 @@
         editMealsForm As form:
             BorderStyle: =BorderStyle.None
             DataSource: =MealsTracker
-            DefaultMode: =FormMode.View
             Height: =813
             Item: =selectedmeal
             LayoutMinHeight: =250
